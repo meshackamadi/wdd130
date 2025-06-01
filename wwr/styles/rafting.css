@@ -7,10 +7,95 @@
     --text-font: "Open Sans" sans-serif;
 }
 
+.header {
+    background-color: var(--primary-cols);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 1300px;
+}
+
+.navigation img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+	flex: 1 1 auto;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+.navigation a:hover {
+	color: red;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.hero {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #999;
+    margin: 10px;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+    font-size: 260%;
+}
+
+.hero .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.hero p {
+    width: 70px;
+    max-width: 500px;
+    margin: 0;
+    padding-left:10px;
+    order: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.hero img{
+    width: 30%;
+    height: auto;
+    max-width: 250px;
+    order: 2;
 }
 
 body {
@@ -20,52 +105,11 @@ body {
     font-size: larger;
 }
 
-header, main, footer {
-    width: 840px;
+footer {
+    width: 1300px;
     margin: 0 auto;
-}
-
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-cols);
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
 }
 
 .socialmedia a {
     text-decoration: none;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    top: 20%;
-    height: 100vh; /* Full viewport height */
-    background: linear-gradient(to right, #4e54c8, #8f94fb); /* Gradient background for flair */
-    overflow: hidden;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 90px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-cols);
-    color: antiquewhite;
-}
-
-.hero article img {
-    float: right;
-    width: 120px;
 }
